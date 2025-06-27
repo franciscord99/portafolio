@@ -279,7 +279,6 @@ section {
 }
 
 .fade-in {
-  opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
@@ -348,4 +347,93 @@ section {
   transform: scale(1.05);
 }
 
+@media (max-width: 400px) {
+  #main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
 
+  .foto-perfil {
+    width: 90px;
+    height: 90px;
+  }
+
+  .header-info {
+    text-align: center;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+    scale: 0.9;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .language-selector {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .language-selector button {
+    width: 32px;
+    height: 24px;
+  }
+}
+
+/* Estilo base para las imágenes de proyectos */
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.masonry .img-container {
+  flex: 1 1 200px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.masonry .img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para pantallas pequeñas (responsive) */
+@media screen and (max-width: 480px) {
+  .masonry .img-container {
+    max-width: 180px;
+    flex: 1 1 45%;
+  }
+
+  .masonry .img-container img {
+    transform: scale(0.95);
+  }
+}
