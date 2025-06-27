@@ -347,7 +347,7 @@ section {
   transform: scale(1.05);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 427px) {
   #main-header {
     flex-direction: column;
     align-items: center;
