@@ -32,11 +32,19 @@ header.shrink {
 
 /* FOTO PERFIL */
 .foto-perfil {
-  width: 60px;
-  height: 60px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
+  border: 3px solid #ccc;
   object-fit: cover;
   margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sobre-mi-foto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 /* TITULOS */
@@ -436,4 +444,55 @@ section {
   .masonry .img-container img {
     transform: scale(0.95);
   }
+}
+
+/* CENTRADO GLOBAL PARA SECCIONES EN MÓVILES */
+@media screen and (max-width: 480px) {
+  section {
+    text-align:center;
+  }
+
+  section p,
+  section li,
+  section h2,
+  section h3 {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .formacion-container img,
+  .ebac,
+  .foto-perfil {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .idiomas-grid {
+    justify-content: center;
+  }
+
+  .idioma-card {
+    margin: 0 auto;
+  }
+
+  body,
+  main,
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* CENTRADO TAMBIÉN PARA .fade-in EN MÓVIL */
+@media screen and (max-width: 480px) {
+  .fade-in {
+    text-align: center;
+  }
+}
+
+/* AJUSTE DE SEPARACIÓN ENTRE SECCIONES EN GENERAL */
+main {
+  margin-top: 140px; /* Espacio suficiente para que no se tape con el header */
 }
