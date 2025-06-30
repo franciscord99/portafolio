@@ -1,4 +1,10 @@
 /* FUENTE BASE */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +12,8 @@ body {
   background-color: #ffffff;
   color: #333;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* HEADER FIJO */
@@ -19,6 +27,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -35,7 +44,6 @@ header.shrink {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  border: 3px solid #ccc;
   object-fit: cover;
   margin-right: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -111,12 +119,23 @@ header h3 {
 /* SECCIONES */
 main {
   margin-top: 130px;
-  padding: 2rem;
+  padding: 2rem 1.2rem;
 }
 
 section {
   margin-bottom: 250px;
   margin-top: auto;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 /* IDIOMAS */
@@ -211,6 +230,11 @@ section {
   fill: #007bff;
 }
 
+footer{
+  padding: 2rem 0; 
+  background-color: rgba(0,0,0,0.1);
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
   header {
@@ -236,8 +260,8 @@ section {
   
    .foto-perfil {
     order: 3;
-    width: 45px;
-    height: 45px;
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -364,8 +388,8 @@ section {
   }
 
   .foto-perfil {
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
   }
 
   .header-info {
@@ -444,6 +468,11 @@ section {
   .masonry .img-container img {
     transform: scale(0.95);
   }
+
+  .foto-perfil {
+    width: 95px;
+    height: 95px;
+  }
 }
 
 /* CENTRADO GLOBAL PARA SECCIONES EN MÓVILES */
@@ -477,7 +506,6 @@ section {
     margin: 0 auto;
   }
 
-  body,
   main,
   section {
     padding-left: 1rem;
@@ -494,5 +522,5 @@ section {
 
 /* AJUSTE DE SEPARACIÓN ENTRE SECCIONES EN GENERAL */
 main {
-  margin-top: 140px; /* Espacio suficiente para que no se tape con el header */
+  margin-top: 100px; /* Espacio suficiente para que no se tape con el header */
 }
