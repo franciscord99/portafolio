@@ -122,7 +122,7 @@ const translations = {
     "proyectos-text": "A lo largo de mi formación y aprendizaje autodidacta he desarrollado varios proyectos personales que me han permitido poner en práctica mis conocimientos en desarrollo web. Entre ellos se destacan pequeñas landing pages responsivas y componentes interactivos con JavaScript. Cada proyecto fue una oportunidad para mejorar mis habilidades en diseño, estructura del código y experiencia de usuario. Actualmente sigo ampliando mi portafolio con nuevas ideas, explorando herramientas modernas y buenas prácticas de desarrollo. Mi objetivo es aplicar todo lo aprendido en proyectos reales que generen impacto.",
 
     "idiomas-title": "Idiomas",
-    "idiomas-text": "Nativo Nivel A1 – Básico Nivel A1 – Básico",
+    "idiomas-text": "Nativo Nivel B1 – Básico Nivel B1 – Básico",
 
     "contacto-text": "Conectá conmigo",
     // Agrega más claves según tu HTML
@@ -217,9 +217,9 @@ const traducciones = {
     "idiomas.tituloEs": "Español",
     "idiomas.p1": "Nativo",
     "idiomas.tituloIt": "Italiano",
-    "idiomas.p2": "Nivel A1 – Básico",
+    "idiomas.p2": "Nivel B1 – Básico",
     "idiomas.tituloIn": "Inglés",
-    "idiomas.p3": "Nivel A1 – Básico",
+    "idiomas.p3": "Nivel B1 – Básico",
     "contacto.p1": "Conectá conmigo",
   },
 
@@ -259,9 +259,9 @@ const traducciones = {
     "idiomas.tituloEs": "Spanish",
     "idiomas.p1": "Native",
     "idiomas.tituloIt": "Italian",
-    "idiomas.p2": "Level A1 – Basic",
+    "idiomas.p2": "Level B1 – Basic",
     "idiomas.tituloIn": "English",
-    "idiomas.p3": "Level A1 – Basic",
+    "idiomas.p3": "Level B1 – Basic",
     "contacto.p1": "Contact me",
   },
   
@@ -301,9 +301,9 @@ const traducciones = {
     "idiomas.tituloEs": "Spagnolo",
     "idiomas.p1": "Nativo",
     "idiomas.tituloIt": "Italiano",
-    "idiomas.p2": "Livello A1 – Base",
+    "idiomas.p2": "Livello B1 – Base",
     "idiomas.tituloIn": "Inglese",
-    "idiomas.p3": "Livello A1 – Base",
+    "idiomas.p3": "Livello B1 – Base",
     "contacto.p1": "Contattami",
   }
 };
